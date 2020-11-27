@@ -1,0 +1,55 @@
+{
+  "name": "simplylink-js-sdk",
+  "version": "1.0.30",
+  "description": "Simplylink SDK to communicate with simplylink api",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha --require babel-register test/* || true",
+    "build": "webpack -p && rimraf ./dist/es5 && babel ./src --out-dir ./dist/es5"
+  },
+  "keywords": [
+    "simplylink-sdk-js",
+    "simplylink"
+  ],
+  "author": "Ron Fridman",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "stage-3",
+      "latest"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "js-cookie": "^2.1.4",
+    "query-string": "^5.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.17",
+    "coveralls": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^3.2.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "json-loader": "^0.5.7",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "vue": "^2.6.12",
+    "webpack": "^3.6.0"
+  }
+}
